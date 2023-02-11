@@ -38,14 +38,14 @@ const Home = () => {
         if (res.data.status === 401 || !res.data) {
             console.log("errror")
         } else {
-            console.log("user delete");
+            getUserData()
             setShow(true)
         }
     }
 
     useEffect(() => {
         getUserData()
-    }, [dltUser])
+    }, [])
     return (
         <>
             {
